@@ -1,0 +1,66 @@
+body {
+  font-size: 16px;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 $space-between-paragraphs;
+}
+
+a {
+  color: $color-text-link;
+  text-decoration: underline;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $color-text-link-hover;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-text-heading;
+  line-height: $line-height-heading;
+  margin: ($space-between-paragraphs * 1.5) 0 ($space-between-paragraphs);
+
+  a {
+    color: $color-text-heading;
+    text-decoration: none;
+  }
+}
+
+h1,
+h2 {
+  font-size: modular-scale(3);
+}
+
+h3 {
+  font-size: modular-scale(2);
+}
+
+h4,
+h5,
+h6 {
+  font-size: modular-scale(1);
+}
+
+ol,
+ul {
+  line-height: $line-height-body * 0.8;
+  margin-left: modular-scale(4);
+}
+
+li {
+  margin-bottom: $space-between-paragraphs / 2;
+
+  > ol,
+  > ul {
+    margin-top: $space-between-paragraphs / 2;
+  }
+}

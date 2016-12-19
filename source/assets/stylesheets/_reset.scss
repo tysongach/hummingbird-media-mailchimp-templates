@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0 none;
+  height: auto;
+  line-height: 100%;
+  max-width: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+a img {
+  border: 0 none;
+}
+
+// table,
+// td {
+//   border-collapse: collapse;
+// }
+
+table {
+  border-collapse: separate;
+  width: 100%;
+}

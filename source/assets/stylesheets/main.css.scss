@@ -1,0 +1,122 @@
+@import "bourbon";
+@import "variables";
+@import "reset";
+@import "base";
+
+
+
+.viewport {
+  background-color: $viewport-background-color;
+  color: $color-text-default;
+  font-family: $font-stack-system;
+  // font-size: 16px;
+  height: 100% !important;
+  line-height: $line-height-body;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+
+
+
+.email__pre-text {
+  background-color: $viewport-background-color;
+  color: $viewport-background-color;
+  font-size: modular-scale(-4);
+  padding: ($space / 3) 0;
+}
+
+.email__header {
+  background-color: #0096d6;
+  color: #ffffff;
+  padding: ($space * 1.5) $space;
+}
+
+.email__header-logo {
+  display: block;
+  max-width: 250px;
+}
+
+.email__body {
+  background-color: #ffffff;
+  padding: $space;
+}
+
+.email__footer {
+  // background-color: shade($viewport-background-color, 5%);
+  background-color: $viewport-background-color;
+  // color: ;
+  font-size: 13px;
+  margin-bottom: $space * 4;
+  padding: ($space * 1.5) $space;
+}
+
+
+
+
+
+
+.press-release__header {
+  text-align: left;
+}
+
+.press-release__body {
+  padding-bottom: $space;
+  // padding: $space;
+  text-align: left;
+
+  img {
+    margin: ($space-between-paragraphs / 2) 0 $space-between-paragraphs;
+  }
+}
+
+.press-release__document-type {
+  color: $color-text-secondary;
+  // display: block;
+  letter-spacing: 2px;
+  padding-bottom: $space / 2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.press-release__download {
+  padding-bottom: $space;
+  text-align: left;
+}
+
+.press-release__download-link {
+  background-color: $viewport-background-color;
+  border-left: 4px solid #0096d6;
+  display: block;
+  font-weight: bold;
+  padding: 10px 15px;
+  // text-decoration: none;
+}
+
+
+
+
+.press-release-title {
+  margin: 0;
+  padding-bottom: $space;
+}
+
+
+
+.u-line-height-zero {
+  line-height: 0;
+}
+
+.u-text-align-left {
+  text-align: left;
+}
+
+.u-text-align-right {
+  text-align: right;
+}

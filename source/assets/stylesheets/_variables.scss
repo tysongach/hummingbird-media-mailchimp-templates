@@ -1,0 +1,21 @@
+$line-height-body: 1.6;
+$line-height-heading: 1.4;
+
+$color-text-default: #333333;
+$color-text-heading: $color-text-default;
+$color-text-secondary: #666666;
+$color-text-link: $color-text-default;
+$color-text-link-hover: #0096d6;
+
+$space: 30px;
+$space-between-paragraphs: modular-scale(2);
+
+$viewport-background-color: #f6f6f6;
+
+$bourbon: (
+  "contrast-switch-dark-color": #000,
+  "contrast-switch-light-color": #fff,
+  "modular-scale-base": 1em,
+  "modular-scale-ratio": $major-second,
+  "rails-asset-pipeline": false,
+);
