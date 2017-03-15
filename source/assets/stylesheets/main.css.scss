@@ -9,17 +9,16 @@
   background-color: $viewport-background-color;
   color: $color-text-default;
   font-family: $font-stack-system;
-  // font-size: 16px;
   height: 100% !important;
   line-height: $line-height-body;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 0;
+  padding: 0 ($space / 2) 0 ($space / 2);
   width: 100% !important;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 640px;
+  // margin: 0 auto;
+  max-width: 600px;
 }
 
 
@@ -28,33 +27,44 @@
 .email__pre-text {
   background-color: $viewport-background-color;
   color: $viewport-background-color;
-  font-size: modular-scale(-4);
-  padding: ($space / 3) 0;
+  font-size: 10px;
+  padding: ($space / 3) 0 ($space / 3) 0;
 }
 
 .email__header {
   background-color: #0096d6;
   color: #ffffff;
-  padding: ($space * 1.5) $space;
+  padding: ($space-l * 1.5) $space-l ($space-l * 1.5) $space-l;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: $space-l $space $space-l $space;
+  }
 }
 
 .email__header-logo {
   display: block;
-  max-width: 250px;
+  width: 250px;
 }
 
 .email__body {
   background-color: #ffffff;
-  padding: $space;
+  padding: $space-l $space-l $space-l $space-l;
+
+  @media only screen and (max-width: 480px) {
+    padding: $space $space $space $space;
+  }
 }
 
 .email__footer {
-  // background-color: shade($viewport-background-color, 5%);
   background-color: $viewport-background-color;
-  // color: ;
+  color: $color-text-secondary;
   font-size: 13px;
   margin-bottom: $space * 4;
-  padding: ($space * 1.5) $space;
+  padding: ($space * 3) $space ($space * 3) $space;
 }
 
 
@@ -67,18 +77,16 @@
 }
 
 .press-release__body {
-  padding-bottom: $space;
-  // padding: $space;
+  padding-bottom: $space * 2;
   text-align: left;
 
   img {
-    margin: ($space-between-paragraphs / 2) 0 $space-between-paragraphs;
+    margin: ($space / 2) 0 $space 0;
   }
 }
 
 .press-release__document-type {
   color: $color-text-secondary;
-  // display: block;
   letter-spacing: 2px;
   padding-bottom: $space / 2;
   text-align: left;
@@ -95,15 +103,15 @@
   border-left: 4px solid #0096d6;
   display: block;
   font-weight: bold;
-  padding: 10px 15px;
-  // text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
 }
 
 
 
 
 .press-release-title {
-  margin: 0;
+  margin: 0 0 0 0;
   padding-bottom: $space;
 }
 

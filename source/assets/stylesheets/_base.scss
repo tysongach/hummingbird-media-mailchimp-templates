@@ -1,11 +1,15 @@
-body {
+.viewport {
   font-size: 16px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 14px !important;
+  }
 }
 
 p,
 ul,
 ol {
-  margin: 0 0 $space-between-paragraphs;
+  margin: 0 0 $space 0;
 }
 
 a {
@@ -27,7 +31,7 @@ h5,
 h6 {
   color: $color-text-heading;
   line-height: $line-height-heading;
-  margin: ($space-between-paragraphs * 1.5) 0 ($space-between-paragraphs);
+  margin: ($space * 1.5) 0 ($space / 1.5) 0;
 
   a {
     color: $color-text-heading;
@@ -37,30 +41,42 @@ h6 {
 
 h1,
 h2 {
-  font-size: modular-scale(3);
+  font-size: 23px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 19px !important;
+  }
 }
 
 h3 {
-  font-size: modular-scale(2);
+  font-size: 20px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 17px !important;
+  }
 }
 
 h4,
 h5,
 h6 {
-  font-size: modular-scale(1);
+  font-size: 17px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 15px !important;
+  }
 }
 
 ol,
 ul {
   line-height: $line-height-body * 0.8;
-  margin-left: modular-scale(4);
+  margin-left: $space * 2;
 }
 
 li {
-  margin-bottom: $space-between-paragraphs / 2;
+  margin-bottom: $space / 2;
 
   > ol,
   > ul {
-    margin-top: $space-between-paragraphs / 2;
+    margin-top: $space / 2;
   }
 }
